@@ -1,0 +1,32 @@
+/CIDInit /ProcSet findresource begin
+12 dict begin
+begincmap
+/CMapName /.-DejaVuSansCondensedmod.ttf,000-UTF16 def
+/CMapType 2 def
+/CIDSystemInfo <<
+  /Registry (Adobe)
+  /Ordering (UCS)
+  /Supplement 0
+>> def
+1 begincodespacerange
+<0000> <FFFF>
+endcodespacerange
+9 beginbfchar
+<0016> <0033>
+<001D> <003A>
+<002C> <0049>
+<0051> <006E>
+<005A> <0077>
+<005B> <0078>
+<005D> <007A>
+<005E> <007B>
+<0060> <007D>
+endbfchar
+2 beginbfrange
+<0044> <004E> <0061>
+<0053> <0058> <0070>
+endbfrange
+endcmap
+CMapName currentdict /CMap defineresource pop
+end
+end

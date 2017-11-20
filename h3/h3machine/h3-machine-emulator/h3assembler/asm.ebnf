@@ -1,0 +1,35 @@
+@@grammar :: Assembly
+@@eol_comments :: /#.*?$/
+
+instruction = [ label:label ] ( data:data | opcode:opcode [ address:address ] ) $;
+
+label = @:identifier ":" ;
+
+data = "=" @:/[0-9a-fA-F]{1,8}/ ;
+
+opcode = /[a-zA-Z]+/ ;
+
+address =
+	| mode:`rel` value:rel_addr
+	| mode:`abs` value:abs_addr
+	| mode:`indir` value:indir_addr
+	| mode:`imm` value:imm_addr
+	;
+
+identifier = /[a-zA-Z]\w*/ ;
+
+rel_addr = "+" offset:hex_literal ;
+
+abs_addr = "$" ( offset:hex_literal | label:label_ref ) ;
+
+indir_addr = "[" offset:signed_hex_literal "]" ;
+
+imm_addr = offset:hex_literal | label:label_ref ;
+
+hex_literal = /[0-9a-fA-F]{1,4}/ ;
+
+signed_hex_literal = /[+-]?[0-9a-fA-F]{1,4}/ ;
+
+label_ref = "&" @:identifier ;
+
+sign = /[+-]/ ;

@@ -1,0 +1,6 @@
+break main:3
+break vuln.c:5
+break vuln.c:6
+break vuln.c:5
+break vuln.c:6
+

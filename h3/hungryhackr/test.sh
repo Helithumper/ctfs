@@ -1,0 +1,1 @@
+curl -Ls -o /dev/null -w %{url_effective} http://google.com

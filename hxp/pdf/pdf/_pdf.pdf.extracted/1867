@@ -1,0 +1,25 @@
+/CIDInit /ProcSet findresource begin
+12 dict begin
+begincmap
+/CMapName /-usr-share-texlive-texmf-dist-fonts-opentype-public-lm-lmmono12-regular.otf,000-UTF16 def
+/CMapType 2 def
+/CIDSystemInfo <<
+  /Registry (Adobe)
+  /Ordering (UCS)
+  /Supplement 0
+>> def
+1 begincodespacerange
+<0000> <FFFF>
+endcodespacerange
+6 beginbfchar
+<003F> <0068>
+<0042> <0069>
+<0051> <006F>
+<0054> <0070>
+<0058> <002E>
+<0074> <0078>
+endbfchar
+endcmap
+CMapName currentdict /CMap defineresource pop
+end
+end

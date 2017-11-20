@@ -1,0 +1,5 @@
+To: gpb@10.10.10.21
+Subject: sendmail test two
+From: me@myserver	
+
+http://10.10.10.21/login?s=GsX_9D0BFqyJe-UrDvSmFdQTEuYRXEIpzh0E5XZ8fe0

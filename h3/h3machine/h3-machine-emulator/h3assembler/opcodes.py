@@ -1,0 +1,38 @@
+OPCODES = [
+    (0x00, 'halt'),
+    (0x10, 'drop'),
+    (0x11, 'swap'),
+    (0x12, 'push'),
+    (0x13, 'pop'),
+    (0x20, 'add'),
+    (0x21, 'sub'),
+    (0x22, 'mul'),
+    (0x23, 'div'),
+    (0x24, 'mod'),
+    (0x25, 'negate'),
+    (0x30, 'and'),
+    (0x31, 'or'),
+    (0x32, 'not'),
+    (0x33, 'xor'),
+    (0x34, 'nand'),
+    (0x35, 'nor'),
+    (0x36, 'ashift'),
+    (0x37, 'lshift'),
+    (0x38, 'rotate'),
+    (0x40, 'jmp'),
+    (0x41, 'jz'),
+    (0x42, 'jc'),
+    (0x50, 'setf'),
+    (0x51, 'clf'),
+    (0x60, 'call'),
+    (0x61, 'ret'),
+]
+
+
+ADDRESSING_MODES = [
+    (0x00, 'none'),
+    (0x01, 'rel'),
+    (0x02, 'abs'),
+    (0x03, 'indir'),
+    (0x04, 'imm'),
+]

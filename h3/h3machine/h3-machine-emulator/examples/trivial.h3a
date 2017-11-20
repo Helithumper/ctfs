@@ -1,0 +1,5 @@
+push $&flag
+setf 8000
+halt
+
+flag: =01234567
