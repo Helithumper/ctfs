@@ -22,24 +22,24 @@ int main(int argc, char **argv) {
     srand(time(0)); //seed with current time
     rand_num = rand();
     uint32_t ans;
-    printf("Welcome to the number guessing game!\n");
-    printf("I'm thinking of a number. Can you guess it?\n");
-    printf("Guess right and you get a flag!\n");
+    //("Welcome to the number guessing game!\n");
+    //printf("I'm thinking of a number. Can you guess it?\n");
+    //printf("Guess right and you get a flag!\n");
 
-    printf("Enter your number: ");
+    //printf("Enter your number: ");
     fflush(stdout);
-    scanf("%u", &ans); // get input from user
-    printf("Your guess was %u.\n", ans);
-    printf("Looking for %u.\n", rand_num);
+    //scanf("%u", &ans); // get input from user
+    //printf("Your guess was %u.\n", ans);
+    printf("%u\n", rand_num);
     fflush(stdout);
 
-    if (rand_num == ans) {
-        printf("You won. Guess was right! Here's your flag:\n");
-        giveFlag();
-    } else {
-        printf("Sorry. Try again, wrong guess!\n");
-    }
-    fflush(stdout);
+    // if (rand_num == ans) {
+    //     printf("You won. Guess was right! Here's your flag:\n");
+    //     giveFlag();
+    // } else {
+    //     printf("Sorry. Try again, wrong guess!\n");
+    // }
+    // fflush(stdout);
 
     return 0;
 }
